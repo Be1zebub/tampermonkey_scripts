@@ -40,8 +40,6 @@
     }
 
     function work() {
-        console.log("Github file download button work!");
-
         var raw = document.getElementById("raw-url");
         if (raw == null) {return};
 
