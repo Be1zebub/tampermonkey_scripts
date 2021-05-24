@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  Github file download button
 // @author       Beelzebub
-// @match        https://github.com/*/*/blob/*
+// @match        https://github.com/*/*
 // @exclude      *~edit
 // @icon         https://github.githubassets.com/favicons/favicon-dark.png
 // ==/UserScript==
@@ -40,6 +40,8 @@
     }
 
     function work() {
+        console.log("Github file download button work!");
+
         var raw = document.getElementById("raw-url");
         if (raw == null) {return};
 
